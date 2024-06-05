@@ -1,9 +1,13 @@
 import { Formik, Form, Field } from "formik";
 import { Container, TextField } from "@mui/material";
+// import css from "./RegisterForm.module.css";
+
+
+// style={{ maxWidth: '335px', padding: '24px' }}
 
 export default function RegisterForm() {
   return (
-    <Container style={{ maxWidth: '335px' }}>
+    <Container style={{ maxWidth: '335px', padding: '24px' }}>
       <Formik
         initialValues={{
           name: "",
@@ -31,7 +35,7 @@ export default function RegisterForm() {
             {({ field }) => (
               <TextField
                 {...field}
-                id="standard-basic-username"
+                id="standard-basic-useremail"
                 label="Enter your email"
                 variant="outlined"
                 fullWidth
@@ -42,7 +46,7 @@ export default function RegisterForm() {
             {({ field }) => (
               <TextField
                 {...field}
-                id="standard-basic-username"
+                id="standard-basic-userpassword"
                 label="Create a password"
                 variant="outlined"
                 fullWidth

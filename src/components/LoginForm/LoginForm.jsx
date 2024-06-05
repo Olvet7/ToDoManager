@@ -20,7 +20,7 @@ const handleClickShowPassword = () => {
 };
 
   return (
-    <Container maxWidth="sm">
+    <Container style={{ maxWidth: '335px' }}>
       <Formik
         initialValues={{
           email: "",
@@ -36,7 +36,7 @@ const handleClickShowPassword = () => {
             {({ field }) => (
               <TextField
                 {...field}
-                id="standard-basic-username"
+                id="standard-basic-useremail"
                 label="Enter your email"
                 variant="outlined"
                 fullWidth
@@ -47,7 +47,7 @@ const handleClickShowPassword = () => {
             {({ field }) => (
               <TextField
                 {...field}
-                id="standard-basic-username"
+                id="standard-basic-userpassword"
                 label="Enter your password"
                 variant="outlined"
                 fullWidth
